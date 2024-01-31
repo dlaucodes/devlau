@@ -16,7 +16,7 @@ const Header = () => {
                         <Nav 
                         containerStyles='hidden xl:flex gap-x-8 items-center'/>
                         <ThemeToggler />
-                        <div className="flex">
+                        <div className="flex xl:hidden">
                             <MobileNav />
                         </div>
                     </div>
@@ -26,5 +26,4 @@ const Header = () => {
         </header>
     );
 };
-
 export default Header;
