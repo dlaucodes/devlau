@@ -10,9 +10,9 @@ import Social from './Social';
 
 const Hero = () => {
   return (
-    <section>
+    <section className='py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
         <div className="container mx-auto">
-            <div>
+            <div className="flex justify-between gap-x-8">
                 <div>
                     text
                 </div>
@@ -20,7 +20,7 @@ const Hero = () => {
                     image
                 </div>
             </div>
-            <div className='hidden md:flex'>
+            <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
                 <RiArrowDownSLine className="text-3xl text-primary" />
             </div>
 
