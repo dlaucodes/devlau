@@ -14,7 +14,15 @@ const Hero = () => {
         <div className="container mx-auto">
             <div className="flex justify-between gap-x-8">
                 <div>
-                    text
+                   <div>
+                       Hello World
+                   </div>
+                   <h1>
+                        I am David Lau
+                   </h1>
+                   <p>
+                       Software Engineer based in New York City
+                   </p>
                 </div>
                 <div>
                     image
