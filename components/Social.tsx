@@ -1,7 +1,8 @@
 'use client'
 
-import {RiLinkedinFill, RiGithubFill, RiAngelistFill} from 'react-icons/ri'
-import Link from 'next/link'
+import {RiLinkedinFill, RiGithubFill} from 'react-icons/ri';
+import { SiWellfound} from 'react-icons/si';
+import Link from 'next/link';
 
 const icons = [
     {
@@ -14,7 +15,7 @@ const icons = [
 },
 {
     path: '/',
-    name: <RiAngelistFill />,
+    name: <SiWellfound />,
 },
 ];
 
