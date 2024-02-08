@@ -33,6 +33,7 @@ const Hero = () => {
                               Download CV <Download size={18} />
                           </Button>
                    </div>
+                   <Social />
                 </div>
                 <div className="hidden xl:flex relative">
                     image
