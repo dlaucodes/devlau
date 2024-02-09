@@ -18,10 +18,10 @@ const Hero = () => {
                        Software Engineer
                    </div>
                    <h1 className="h1">
-                        Hello, my name is David lau
+                        Hello, my name is David Lau
                    </h1>
                    <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
-                       based in New York City
+                       New York City
                    </p>
                    <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
                       <Link href='/contact'>
