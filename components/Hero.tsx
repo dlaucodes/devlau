@@ -18,7 +18,7 @@ const Hero = () => {
                        Software Engineer
                    </div>
                    <h1 className="h1">
-                        Hello, my name is David Lau
+                        Hello, my name is David Lau, im port pic
                    </h1>
                    <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
                        New York City
