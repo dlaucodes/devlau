@@ -30,7 +30,7 @@ const Hero = () => {
                           </Button>
                       </Link>
                           <Button variant='secondary' className='gap-x-2'>
-                              Download CV <Download size={18} />
+                              Download Resume <Download size={18} />
                           </Button>
                    </div>
                    <Social containerStyles='flex gap-x-6 mx-auto xl:mx-0'
