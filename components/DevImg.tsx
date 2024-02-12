@@ -1,8 +1,10 @@
-import React from 'react'
+import Image from 'next/image'
 
 const DevImg = () => {
   return (
-    <div>DevImg</div>
+    <div>
+        <Image src="me.jpg"></Image>
+    </div>
   )
 }
 
