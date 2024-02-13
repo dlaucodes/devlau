@@ -37,9 +37,10 @@ const Hero = () => {
                     iconsStyles='text-foreground text-[22px] hover:text-primary transition-all' />
                 </div>
                 <div className="hidden xl:flex relative">
-                    <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
-                       <DevImg containerStyles='bg-hero_shape w-[500px] h-[500px] bg-no-repeat relative'
-                       imgSrc='/assets/hero/prof.jpg' />
+                    <div className='rounded-full items-center flex justify-center w-[400px] h-[400px] bg-no-repeat absolute -top-1 -right-2 z-20'>
+                       <DevImg containerStyles='w-[510px] h-[456px] bg-no-repeat'
+                       imgSrc='/assets/hero/developer.png'
+                       />
                     </div>
                 </div>
             </div>
