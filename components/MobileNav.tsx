@@ -1,22 +1,11 @@
 import Link from "next/link";
-
+import {RxHamburgerMenu} from "react-icons/rx"
+import { CiMenuKebab } from "react-icons/ci"
 const MobileNav = () => {
   return (
     <div>
-      <svg
-        className={"w-6 h-6"}
-        fill="default"
-        stroke=""
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          d="M4 6h16M4 12h16M4 18h16"
-        ></path>
-      </svg>
+      <CiMenuKebab />
+      {/* <RxHamburgerMenu /> */}
     </div>
   );
 };
