@@ -36,11 +36,11 @@ const Hero = () => {
                    <Social containerStyles='flex gap-x-6 mx-auto xl:mx-0'
                     iconsStyles='text-foreground text-[22px] hover:text-primary transition-all' />
                 </div>
-                <div className="hidden xl:flex relative">
+                <div className="hidden xl:flex relative justify-center items-center">
                     <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[400px] h-[400px] bg-no-repeat items-center justify-center'>
-                       <DevImg containerStyles='flex justify-items-center justify-center'
+                       {/* <DevImg containerStyles='flex justify-items-center justify-center'
                        imgSrc='/assets/hero/developer.png'
-                       />
+                       /> */}
                     </div>
                 </div>
             </div>
