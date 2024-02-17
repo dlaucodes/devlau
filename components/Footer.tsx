@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
-        Footer
+    <footer className="w-full flex justify-center items-center">
+        Footer Here
     </footer>
   )
 }
