@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
@@ -16,6 +17,7 @@ const Header = () => {
     });
     return () => window.removeEventListener("scroll", scrollYPos);
   });
+
   return (
     <header
       className={`${
