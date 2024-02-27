@@ -1,19 +1,32 @@
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger} from '/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger } from '/components/ui/sheet';
 
-import { CiMenuBurger } from "react-icons/ci"
+import { CiMenuBurger } from "react-icons/ci";
+
+import Nav from './Nav';
+import Logo from './Logo';
+import Social from './Social'
+
 
 const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <CiMenuBurger 
-          value={{size: '50px'}}
+        <CiMenuBurger
+          value={{ size: '60px' }}
           className='cursor-pointer'
         />
 
       </SheetTrigger>
-      <SheetContent>content</SheetContent>
+      <SheetContent>
+        <div>
+          <div>
+            <Logo />
+            <Nav />
+            <Social />
+          </div>
+        </div>
+      </SheetContent>
     </Sheet>
   );
 };
