@@ -6,6 +6,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import Nav from "./Nav";
 import Logo from "./Logo";
 import Social from "./Social";
+import About from "./About";
 
 const MobileNav = () => {
   return (
@@ -24,9 +25,9 @@ const MobileNav = () => {
             />
             <Social containerStyles="flex gap-x-4" iconStyles="text-2xl"
             linkStyles="text-2xl" />
-            more info heree
           </div>
         </div>
+        <About />
       </SheetContent>
     </Sheet>
   );
