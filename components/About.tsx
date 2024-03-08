@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/tabs'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/tabs';
 
-import {User2, HomeIcon, MailIcon, PhoneCall, GraduationCap, Calendar, Briefcase} from 'lucide/react';
+import {User2, HomeIcon, MailIcon, PhoneCall, GraduationCap, Calendar, Briefcase,} from "lucide-react";
 
 const infoData = [
     {
@@ -10,23 +10,38 @@ const infoData = [
     },
       {
         icon: <PhoneCall size={30} />,
-        text: 'David Lau',
+        text: '+1 917 369 0156',
     },
       {
-        icon: <User2 size={30} />,
-        text: 'David Lau',
+        icon: <MailIcon size={30} />,
+        text: 'lau.chun.dev@gmail.com',
     },
       {
-        icon: <User2 size={30} />,
-        text: 'David Lau',
+        icon: <HomeIcon size={30} />,
+        text: 'New York City',
     },
-      {
-        icon: <User2 size={30} />,
-        text: 'David Lau',
-    },
-      {
-        icon: <User2 size={30} />,
-        text: 'David Lau',
+      
+]
+
+const qualificationData = [
+    {
+        title: 'experience',
+        data: {
+            company: 'CityMove',
+            qualification: 'Software Engingeer Intern',
+            years: 'October 2023 - Current'
+        }
+    }
+]
+
+const skillData = [
+    {
+        title: 'skills',
+        data: [
+            {
+             
+            }
+        ]
     },
 ]
 
