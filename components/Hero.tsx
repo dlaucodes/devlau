@@ -18,7 +18,9 @@ const Hero = () => {
                        Software Engineer
                    </div>
                    <h1 className="h1">
-                        Hello, I'm David Lau
+                        Hello, I'm 
+                        <br/> 
+                        David Lau
                    </h1>
                    <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
                        New York City
@@ -45,6 +47,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
+                test
                 <RiArrowDownSLine className="text-3xl text-primary" />
             </div>
 
