@@ -66,6 +66,11 @@ const About = () => {
               <TabsTrigger value='qualifications'>Qualifications</TabsTrigger>
               <TabsTrigger value='skills'>Skills</TabsTrigger>
             </TabsList>
+            <div className='text-lg mt-12 xl:mt-8'>
+              <TabsContent value='personal'>personal info</TabsContent>
+              <TabsContent value='qualifications'>qualifications</TabsContent>
+              <TabsContent value='skills'>skills</TabsContent>
+            </div>
           </Tabs>
         </div>
       </div>
