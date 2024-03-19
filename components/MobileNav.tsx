@@ -25,9 +25,9 @@ const MobileNav = () => {
             />
             <Social containerStyles="flex gap-x-4" iconStyles="text-2xl"
             linkStyles="text-2xl" />
+        <About />
           </div>
         </div>
-        <About />
       </SheetContent>
     </Sheet>
   );
