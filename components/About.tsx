@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/tabs';
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 
 import {User2, HomeIcon, MailIcon, PhoneCall, GraduationCap, Calendar, Briefcase,} from "lucide-react";
 
@@ -55,9 +55,18 @@ const About = () => {
 
         <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>About me</h2>
       </div>
-      <div>
-        <div>
-          
+      <div className='flex flex-col xl:flex-row'>
+        <div className='hidden xl:flex flex-1 relative'>
+          dev image here
+        </div>
+        <div className='flex-1'>
+          <Tabs defaultValue='personal'>
+            <TabsList>
+              <TabsTrigger value='personal'>Personal Info</TabsTrigger>
+              <TabsTrigger value='qualifications'>Qualifications</TabsTrigger>
+              <TabsTrigger value='skills'>Skills</TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
       </div>
       </section>
