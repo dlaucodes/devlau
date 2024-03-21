@@ -81,11 +81,11 @@ const About = () => {
             <div className="text-lg mt-12 xl:mt-8">
               <TabsContent value="personal">
                 <div className="text-center xl:text-left">
-                  <h3 className="h3 mb-4">Passionate Software Engineer</h3>
+                  <h3 className="h3 mb-4">Full-Stack Software Engineer</h3>
                   <p className="subtitle max-w-xl max-auto xl:mx-0">
-                    I am a New York City based Full-stack Develop with a
+                    I am a New York City based Full-Stack Developer with a
                     passsion for learning new languages, frameworks, and
-                    technologies. I enjoy creating apps taht are both aesthetic
+                    technologies. I enjoy creating apps that are both aesthetic
                     and functional.
                   </p>
                   <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -111,12 +111,11 @@ const About = () => {
                       className="flex items-center gap-x-4 mx-4 xl:mx:0"
                       key={index}
                     >
-                      <div>{item.title}</div>
                       <div className="items-center mx-2 flex flex-col">
                         <ul>
-                          <li>{item.data.company}</li>
-                          <li>{item.data.role}</li>
-                          <li>{item.data.years}</li>
+                          <li className="text-primary">{item.data.company}</li>
+                          <li className='text-muted-foreground'>{item.data.role}</li>
+                          <li className='text-muted-foreground'>{item.data.years}</li>
                         </ul>
                       </div>
                     </div>

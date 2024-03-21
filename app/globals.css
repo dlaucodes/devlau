@@ -84,6 +84,6 @@
   @apply text-muted-foreground text-lg mb-8 font-light;
 }
 
-/* .section-title {
-  @apply text-4xl font-bold relative w-max flex items-center justify-between before:dark:bg-dots-dark.svg before:bg-center before:w-[24px] before:h-[24px];
-}  */
+.section-title {
+  @apply text-4xl font-bold relative w-max flex items-center justify-between;
+} 
