@@ -75,14 +75,14 @@ const About = () => {
                     <p className='subtitle max-w--xl max-auto xl:mx-0'>
                       I specialize in crafting intuitive and aesthetic full-stack applications
                     </p>
-                    <div>
+                    <div className='grid xl:grid-cols-2 gap-4 mb-12'>
                       {infoData.map((item, index)=>{
                         return(
-                          <div key={index}>
-                            <div className='text'>
+                          <div className='flex items-center gap-x-4 mx-4 xl:mx-0' key={index}>
+                            <div className='text-primary'>
                               {item.icon}
                             </div>
-                            <div>
+                            <div className=''>
                               {item.text}
                             </div>
                           </div>
