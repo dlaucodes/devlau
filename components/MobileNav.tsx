@@ -23,7 +23,7 @@ const MobileNav = () => {
               containerStyles="flex flex-col items-center gap-y-6"
               linkStyles="text-2xl"
             />
-            <Social containerStyles="flex gap-x-4" iconStyles="text-2xl"
+            <Social containerStyles="flex gap-x-4" iconsStyles="text-foreground hover:text-primary transition-all"
             linkStyles="text-2xl" />
         <About />
           </div>
