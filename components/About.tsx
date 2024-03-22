@@ -103,7 +103,7 @@ const About = () => {
                   </div>
                 </div>
               </TabsContent>
-              <TabsContent value="skills">skills</TabsContent>
+              <TabsContent value="skills">skills here</TabsContent>
               <TabsContent value="experience">
                 {experienceData.map((item, index) => {
                   return (
