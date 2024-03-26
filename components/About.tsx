@@ -113,6 +113,7 @@ const About = () => {
                     >
                       <div className="items-center mx-2 flex flex-col">
                         <ul>
+                          <li></li>
                           <li className="text-primary">{item.data.company}</li>
                           <li className='text-muted-foreground'>{item.data.role}</li>
                           <li className='text-muted-foreground'>{item.data.years}</li>
