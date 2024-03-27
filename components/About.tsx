@@ -10,6 +10,7 @@ import {
   Calendar,
   Briefcase,
 } from "lucide-react";
+import { RiDivideLine } from "react-icons/ri";
 
 const infoData = [
   {
@@ -33,13 +34,21 @@ const infoData = [
 const experienceData = [
   {
     title: "experience",
-    data: {
+    data1: {
       company: "CityMove",
       role: "Software Engineer Intern",
       desc1: "Led the comprehensive revamp of the front end, introducing modern technologies like Next.js and Tailwind CSS, and successfully integrated it with the Rails back end, which supports a database of over 30,000 users.",
       desc2: "Orchestrated a strategic restructuring of file systems within the front-end team, improving code efficiency and readability to promote a more streamlined development workflow.",
       desc3: "Implemented and fine-tuned a search engine optimization strategy tailored for mobile devices, aiming to boost online visibility, increase organic traffic, and deliver a seamless user experience across all platforms.",
       years: "October 2023 - Current",
+    },
+    data2: {
+      company: "American East Pharmacy Inc",
+      role: "Co-Founder / Operations Manager",
+      desc1: "Researched and customized implementation of remote employee timecard system access with TCP/IP protocols.",
+      desc2: "Managed a staff of more than 20 employees.",
+      desc3: "Maintained 100% compliance with regulations and audit requirements.",
+      years: "October 2015 - July 2022",
     },
   },
 ];
@@ -111,18 +120,34 @@ const About = () => {
                 {experienceData.map((item, index) => {
                   return (
                     <div
-                      className="flex items-center gap-x-4 mx-4 xl:mx:0"
+                      className="flex flex-col items-center gap-x-4 mx-4 xl:mx:0"
                       key={index}
                     >
-                      <div className="items-center mx-2 flex flex-col">
+                      <div className="items-center mx-2">
                         <ul className="">              
-                          <li className="text-primary">{item.data.company}</li>
-                          <li className='text-muted-foreground'>{item.data.role}</li>
-                          <li className='text-muted-foreground'>{item.data.years}</li>
-                          <li className='text-muted-foreground'>- {item.data.desc1}</li>
-                          <li className='text-muted-foreground'>- {item.data.desc2}</li>
-                          <li className='text-muted-foreground'>- {item.data.desc3}</li>
+                          <li className="h4 text-primary">{item.data1.company}</li>
+                          <li className='text-muted-foreground'>{item.data1.role}</li>
+                          <li className='text-muted-foreground'>{item.data1.years}</li>
+                          <div className="mt-2 text-foreground">
+                          <li>- {item.data1.desc1}</li>
+                          <li>- {item.data1.desc2}</li>
+                          <li>- {item.data1.desc3}</li>
+                          </div>
                         </ul>
+                        
+                      </div>
+                      <div className="items-center mx-2 my-4">
+                        <ul className="">              
+                          <li className="h4 text-primary">{item.data2.company}</li>
+                          <li className='text-muted-foreground'>{item.data2.role}</li>
+                          <li className='text-muted-foreground'>{item.data2.years}</li>
+                          <div className="mt-2 text-foreground">
+                          <li>- {item.data2.desc1}</li>
+                          <li>- {item.data2.desc2}</li>
+                          <li>- {item.data2.desc3}</li>
+                          </div>
+                        </ul>
+                        
                       </div>
                     </div>
                   );
