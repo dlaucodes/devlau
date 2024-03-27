@@ -36,6 +36,9 @@ const experienceData = [
     data: {
       company: "CityMove",
       role: "Software Engineer Intern",
+      desc1: "Led the comprehensive revamp of the front end, introducing modern technologies like Next.js and Tailwind CSS, and successfully integrated it with the Rails back end, which supports a database of over 30,000 users.",
+      desc2: "Orchestrated a strategic restructuring of file systems within the front-end team, improving code efficiency and readability to promote a more streamlined development workflow.",
+      desc3: "Implemented and fine-tuned a search engine optimization strategy tailored for mobile devices, aiming to boost online visibility, increase organic traffic, and deliver a seamless user experience across all platforms.",
       years: "October 2023 - Current",
     },
   },
@@ -112,11 +115,13 @@ const About = () => {
                       key={index}
                     >
                       <div className="items-center mx-2 flex flex-col">
-                        <ul>
-                          <li></li>
+                        <ul className="">              
                           <li className="text-primary">{item.data.company}</li>
                           <li className='text-muted-foreground'>{item.data.role}</li>
                           <li className='text-muted-foreground'>{item.data.years}</li>
+                          <li className='text-muted-foreground'>- {item.data.desc1}</li>
+                          <li className='text-muted-foreground'>- {item.data.desc2}</li>
+                          <li className='text-muted-foreground'>- {item.data.desc3}</li>
                         </ul>
                       </div>
                     </div>
