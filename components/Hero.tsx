@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className='py-12 xl:py-24 h-[82vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
         <div className="container mx-auto">
-            <div className="flex justify-center gap-x-20">
+            <div className="flex justify-between px-10">
                 <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
                    <div className="text-m uppercase font-semi-bold mb-4 text-primary tracking-[4px]">
                        Software Engineer
@@ -39,8 +39,8 @@ const Hero = () => {
                     iconsStyles='text-foreground text-[22px] hover:text-primary transition-all' />
                 </div>
                 <div className="hidden xl:flex relative justify-center items-center ">
-                    <div className=' w-[400px] h-[400px] bg-no-repeat items-center border border-primary rounded-xl overflow-hidden justify-center'>
-                       <DevImg containerStyles='flex justify-items-center justify-center'
+                    <div className=' w-[400px] h-[500px] bg-no-repeat items-center content-center border border-primary rounded-xl overflow-hidden justify-center'>
+                       <DevImg containerStyles='flex justify-items-center justify-center pb-20'
                        imgSrc='/assets/hero/personal.jpeg'
                        />
                     </div>
