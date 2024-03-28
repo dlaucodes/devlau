@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className='py-12 xl:py-24 h-[82vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
         <div className="container mx-auto">
-            <div className="flex justify-between gap-x-8">
+            <div className="flex justify-center gap-x-20">
                 <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
                    <div className="text-m uppercase font-semi-bold mb-4 text-primary tracking-[4px]">
                        Software Engineer
@@ -38,15 +38,15 @@ const Hero = () => {
                    <Social containerStyles='flex gap-x-6 mx-auto xl:mx-0'
                     iconsStyles='text-foreground text-[22px] hover:text-primary transition-all' />
                 </div>
-                <div className="hidden xl:flex relative justify-center items-center">
-                    <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[400px] h-[400px] bg-no-repeat items-center justify-center'>
-                       {/* <DevImg containerStyles='flex justify-items-center justify-center'
-                       imgSrc='/assets/hero/developer.png'
-                       /> */}
+                <div className="hidden xl:flex relative justify-center items-center ">
+                    <div className=' w-[400px] h-[400px] bg-no-repeat items-center border border-primary rounded-xl overflow-hidden justify-center'>
+                       <DevImg containerStyles='flex justify-items-center justify-center'
+                       imgSrc='/assets/hero/personal.jpeg'
+                       />
                     </div>
                 </div>
             </div>
-            <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
+            <div className='hidden md:flex relative left-2/4 bottom-0 xl:bottom-0 mt-20 animate-bounce'>
                 <RiArrowDownSLine className="text-3xl text-primary" />
             </div>
 

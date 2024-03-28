@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Technologies from "./Technologies";
+import {RiArrowDownSLine} from 'react-icons/ri'
 
 import {
   User2,
@@ -51,6 +52,14 @@ const experienceData = [
       desc3: "Maintained 100% compliance with regulations and audit requirements.",
       years: "October 2015 - July 2022",
     },
+    data3: {
+      company: "JP Morgan Chase",
+      role: "Personal Banker",
+      desc1: "Proactively retained relationships with retail banking clients through face-to-face interactions and phone.",
+      desc2: "Partnered with other financial specialists (Mortgage Bankers, Financial Advisors, and Business Relationship Managers) to connect customers based on their specialized financial needs",
+      desc3: "Engaged customers in sales conversations to identify appropriate financial solutions.",
+      years: "October 2013 - October 2015",
+    },
   },
 ];
 
@@ -70,7 +79,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:h-[860px] xl:py-24">
+    <section id='about-section' className="xl:h-[860px] xl:py-24">
       <div className="container mx-auto">
         <div className="text-xl mb-4 xl:mb-16 text-center mx-auto xl:text-4xl xl:font-bold">
           About me
@@ -78,7 +87,7 @@ const About = () => {
       </div>
       <div className="flex flex-col xl:flex-row justify-center">
         
-        <div className="hidden xl:flex">
+        <div className="">
           <Tabs defaultValue="personal">
             <TabsList className="flex flex-col xl:grid xl:grid-cols-3 xl:w-[960px] justify-center">
               <TabsTrigger className="w-[220px] xl:w-auto" value="personal">
@@ -123,8 +132,9 @@ const About = () => {
                 {experienceData.map((item, index) => {
                   return (
                     <div
-                      className="flex text-center flex-col xl:mx:0 xl:overflow-auto h-[400px]"
+                      className="flex text-center flex-col xl:mx:0 "
                       key={index}
+
                     >
                       <div className="mx-2 justify-center flex xl:text-left xl:justify-start">
                         <ul className="min-w-[500px] xl:w-full p-8">              
@@ -152,6 +162,19 @@ const About = () => {
                         </ul>
                         
                       </div>
+                      <div className="mx-2 justify-center flex xl:text-left xl:justify-start">
+                        <ul className="min-w-[500px] xl:w-full p-8">              
+                          <li className="h4 text-primary">{item.data3.company}</li>
+                          <li className='text-muted-foreground'>{item.data3.role}</li>
+                          <li className='text-muted-foreground'>{item.data3.years}</li>
+                          <div className="mt-2 text-foreground">
+                          <li>- {item.data3.desc1}</li>
+                          <li>- {item.data3.desc2}</li>
+                          <li>- {item.data3.desc3}</li>
+                          </div>
+                        </ul>
+                        
+                      </div>
                     </div>
                   );
                 })}
@@ -159,8 +182,13 @@ const About = () => {
             </div>
           </Tabs>
         </div>
+        
       </div>
+      <div className='hidden md:flex relative left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce'>
+                <RiArrowDownSLine className="text-3xl text-primary" />
+        </div>
     </section>
+    
   );
 };
 

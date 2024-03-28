@@ -4,13 +4,13 @@ import Image from "next/image"
 const Logo = () => {
   return (
     <Link href='/'>
-       {/* <Image 
-       src="/assets/icons/android-chrome-192x192/png"
-       width={192}
-       height={192}
+       <Image 
+       src="/assets/icons/android-chrome-512x512.png"
+       width={50}
+       height={50}
        alt=""
-        /> */}
-        Logo
+         /> 
+        
     </Link>
   )
 }
