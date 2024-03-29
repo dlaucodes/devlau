@@ -71,16 +71,7 @@ const experienceData = [
   },
 ];
 
-const skillData = [
-  {
-    title: "skills",
-    data: [
-      {
-        name: "HTML, CSS",
-      },
-    ],
-  },
-];
+
 
 const About = () => {
   const getData = (arr, title) => {
