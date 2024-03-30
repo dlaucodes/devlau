@@ -79,9 +79,9 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section id="about-section" className="xl:h-[860px] xl:py-24">
+    <section id="about-section" className="xl:h-full xl:py-24">
       <div className="container mx-auto">
-        <div className="text-xl mb-4 xl:mb-16 text-center mx-auto xl:text-4xl xl:font-bold">
+        <div className="section-title mb-4 xl:mb-16 text-center mx-auto">
           About me
         </div>
       </div>
@@ -109,7 +109,7 @@ const About = () => {
                     technologies. I enjoy creating apps that are both aesthetic
                     and functional.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 mb-12">
+                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-12">
                     {infoData.map((item, index) => {
                       return (
                         <div
