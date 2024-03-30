@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Technologies from "./Technologies";
@@ -195,7 +196,7 @@ const About = () => {
           </Tabs>
         </div>
       </div>
-      <div className="hidden md:flex relative left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce">
+      <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce">
         <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
     </section>

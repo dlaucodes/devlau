@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex relative left-2/4 bottom-0 xl:bottom-0 mt-40 animate-bounce">
+        <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-40 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
