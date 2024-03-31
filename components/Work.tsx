@@ -21,7 +21,7 @@ const projectData = [
         name: "DevLau",
         description: "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
         link: "/",
-        github: "/",
+        github: "https://github.com/dlaucodes/devlau",
       },
   {
     defaultimg: "/assets/projects/yerbnbss.png",
@@ -29,8 +29,8 @@ const projectData = [
     category: ["react js", "aws"],
     name: "Yerbnb",
     description: "A full authentication near pixel-perfect clone of Airbnb.",
-    link: "/",
-    github: "/",
+    link: "https://yerbnb.herokuapp.com/",
+    github: "https://github.com/dlaucodes",
   },
   {
     defaultimg: "/assets/projects/auroraSS.png",

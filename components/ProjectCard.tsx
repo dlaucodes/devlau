@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import {Card, CardHeader} from './ui/card';
-import {Github, Link2Icon} from 'lucide/react';
+import { Github, Link2 } from 'lucide-react';
 import {Badge} from './ui/badge';
 import { useState } from 'react';
 
@@ -35,6 +35,12 @@ const ProjectCard = ({project}) => {
             priority
             />
         )}
+            <div className='absolute'>
+                <Link 
+                href={project.link} 
+                target="_blank"
+                className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-1 opacity-0 hover:scale-100 hover:opacity-100 transition-all duration-200'><Link2 /></Link>
+            </div>
             </div>
         </CardHeader>
         <div className='h-[150px] px-6 py-6'>
