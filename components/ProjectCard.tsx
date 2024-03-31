@@ -13,6 +13,7 @@ const ProjectCard = ({project}) => {
    
     <Card>
         <CardHeader>
+            <Link href={project.link}>
             <div className='relative w-full h-[200px] flex items-center justify-center bg-tertiary dark:bg-secondary/40'
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}>
@@ -35,13 +36,11 @@ const ProjectCard = ({project}) => {
             priority
             />
         )}
-            <div className='absolute'>
-                <Link 
-                href={project.link} 
-                target="_blank"
-                className='bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-1 opacity-0 hover:scale-100 hover:opacity-100 transition-all duration-200'><Link2 /></Link>
+            <div className=' absolute bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-1 opacity-0 hover:scale-100 hover:opacity-100 transition-all duration-200'>
+                <Link2 />
             </div>
             </div>
+            </Link>
         </CardHeader>
         <div className='h-[150px] px-6 py-6'>
             <h4 className='h4 mb-1'>
