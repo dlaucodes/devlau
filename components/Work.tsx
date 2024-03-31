@@ -61,7 +61,7 @@ const Work = () => {
       id="projects-section"
       className="relative mb-12 mt-40 xl:mb-48  xl:top-[-40px]"
     >
-      <div className="container mx-auto xl:flex xl:flex-row">
+      <div className="container mx-auto xl:flex xl:flex-row md:flex md:justify-evenly">
         <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4 py-8">
             Latest Projects
@@ -72,7 +72,7 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[1000px] items-center h-full  top-0 right-0">
+        <div className="max-w-[800px] items-center h-full top-0 right-0">
           <Swiper
             className="h-[500px] max-w-[800px]"
             slidesPerView={1}

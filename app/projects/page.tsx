@@ -55,7 +55,7 @@ const Projects = () => {
           My Projects
         </h2>
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 flex items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 flex items-center gap-8 mb-12">
           {projectData.map((project, index) => {
               return (
          
