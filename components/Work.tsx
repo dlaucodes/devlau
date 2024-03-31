@@ -15,13 +15,13 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    defaultimg: "/assets/projects/yerbnbss.png",
-    hoverimg: "/assets/projects/reservation.gif",
+    defaultimg: "/assets/projects/portlau.png",
+    hoverimg: "/assets/projects/portlau.png",
     category: ["react js", "aws"],
     name: "Dlau.dev",
     description:
       "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
-    link: "/",
+    link: "https://dlau.dev",
     github: "https://github.com/dlaucodes/devlau",
   },
   {
@@ -63,7 +63,7 @@ const Work = () => {
     >
       <div className="container mx-auto xl:flex xl:flex-row md:flex md:justify-evenly">
         <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4 py-8">
+          <h2 className="section-title py-4">
             Latest Projects
             <RiArrowRightSLine className="hidden xl:flex text-4xl text-primary font-bold" />
           </h2>
@@ -98,6 +98,7 @@ const Work = () => {
       <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce">
         <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
+      <div className='flex mt-20 align-center dark:border-secondary border-b w-[90vw] h-[1px] justify-center mx-auto'></div>
     </section>
   );
 };

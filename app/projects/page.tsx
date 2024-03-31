@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const projectData = [
   {
-    defaultimg: "/assets/projects/yerbnbss.png",
-    hoverimg: "/assets/projects/reservation.gif",
+    defaultimg: "/assets/projects/portlau.png",
+    hoverimg: "/assets/projects/portlau.png",
     category: ["react js", "aws"],
     name: "Dlau.dev",
     description:

@@ -9,9 +9,6 @@ import {
   HomeIcon,
   MailIcon,
   PhoneCall,
-  GraduationCap,
-  Calendar,
-  Briefcase,
 } from "lucide-react";
 import { RiDivideLine } from "react-icons/ri";
 
@@ -199,6 +196,7 @@ const About = () => {
       <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce">
         <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
+      <div className='mt-20 flex align-center border-b w-[90vw] h-[1px] justify-center mx-auto dark:border-secondary'></div>
     </section>
   );
 };

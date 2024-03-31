@@ -29,7 +29,7 @@ const Hero = () => {
               New York City
             </p>
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
+              <Link href="/#contact-section">
                 <Button className="gap-x-2">
                   Contact me <Send size={18} />
                 </Button>
@@ -58,6 +58,7 @@ const Hero = () => {
         <div className="hidden md:flex md:sticky justify-center left-2/4 bottom-0 xl:bottom-0 mt-20 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary mt-8" />
         </div>
+     
       </div>
     </section>
   );
