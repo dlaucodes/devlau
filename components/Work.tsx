@@ -30,7 +30,7 @@ const projectData = [
     name: "Yerbnb",
     description: "A full authentication near pixel-perfect clone of Airbnb.",
     link: "https://yerbnb.herokuapp.com/",
-    github: "https://github.com/dlaucodes",
+    github: "https://github.com/dlaucodes/YerBnb-FS-Project",
   },
   {
     defaultimg: "/assets/projects/auroraSS.png",
@@ -39,8 +39,8 @@ const projectData = [
     name: "Aurora",
     description:
       "An animated visual representation generated in real time off beats analyzed from music.",
-    link: "/",
-    github: "/",
+    link: "https://dlaucodes.github.io/JSProject/",
+    github: "https://github.com/dlaucodes/JSProject",
   },
   {
     defaultimg: "/assets/projects/opus.png",
@@ -49,8 +49,8 @@ const projectData = [
     name: "Opus",
     description:
       "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
-    link: "/",
-    github: "/",
+    link: "https://opus.onrender.com",
+    github: "https://github.com/Onigirisen/Opus",
   },
 ];
 
