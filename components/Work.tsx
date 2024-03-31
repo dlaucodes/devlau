@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { RiArrowRightSLine, RiArrowDownSLine } from "react-icons/ri";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectFade } from 'swiper/modules';
@@ -12,19 +13,19 @@ import "swiper/css/pagination";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
 
-
 const projectData = [
   {
-    image: "/assets/projects/yerbnbss.png",
+    defaultimg: "/assets/projects/yerbnbss.png",
+    hoverimg: '/assets/projects/reservation.gif',
     category: ["react js", "aws"],
-
     name: "Yerbnb",
     description: "A full authentication near pixel-perfect clone of Airbnb.",
     link: "/",
     github: "/",
   },
   {
-    image: "/assets/projects/auroraSS.png",
+    defaultimg: "/assets/projects/auroraSS.png",
+    hoverimg: "/assets/projects/aurora-demo.gif",
     category: "react js",
     name: "Aurora",
     description:
@@ -33,30 +34,34 @@ const projectData = [
     github: "/",
   },
   {
-    image: "/assets/projects/opus.png",
+    defaultimg: "/assets/projects/opus.png",
+    hoverimg: '/assets/projects/opus.png',
     category: "react js",
     name: "Opus",
-    description: "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
+    description:
+      "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
     link: "/",
     github: "/",
   },
 ];
 
 const Work = () => {
-   
   return (
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
-        <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Latest Projects</h2>
-          <p className="subtitle mb-8"></p>
+        <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex flex-col justify-center items-center xl:items-start">
+          <h2 className="section-title mb-4 p">
+            Latest Projects
+            <RiArrowRightSLine className="hidden xl:flex text-4xl text-primary font-bold" />
+          </h2>
+          <p className="subtitle mb-8">Most current projects</p>
           <Link href="/projects">
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[1000px] xl:absolute top-0 right-0">
+        <div className="max-w-[1000px] h-full xl:absolute top-0 right-0">
           <Swiper
-            className="h-[440px]"
+            className="h-[500px]"
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -84,17 +89,17 @@ const Work = () => {
         className="flex w-full"
       > */}
             {projectData.map((project, index) => {
-                
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
-                
-               
                 </SwiperSlide>
               );
             })}
           </Swiper>
         </div>
+      </div>
+      <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-4 animate-bounce">
+        <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
     </section>
   );

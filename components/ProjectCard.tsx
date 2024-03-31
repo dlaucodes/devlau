@@ -3,21 +3,39 @@ import Image from 'next/image';
 import {Card, CardHeader} from './ui/card';
 import {Github, Link2Icon} from 'lucide/react';
 import {Badge} from './ui/badge';
+import { useState } from 'react';
 
 const ProjectCard = ({project}) => {
+    const [isHovering, setIsHovered] = useState(false);
+    const onMouseEnter = () => setIsHovered(true);
+    const onMouseLeave = () => setIsHovered(false);
   return (
    
     <Card>
         <CardHeader>
-            <div className='relative w-full h-[200px] flex items-center justify-center bg-tertiary dark:bg-secondary/40'>
-                <Image
-                src={project.image} 
-                className='bottom-0 shadow-2xl'
-                width={250}
-                height={250}
-                alt=''
-                priority
-                />
+            <div className='relative w-full h-[200px] flex items-center justify-center bg-tertiary dark:bg-secondary/40'
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}>
+                    {isHovering ? (
+          <Image
+          src={project.hoverimg} 
+          className='bottom-0 shadow-2xl'
+          width={250}
+          height={250}
+          alt=''
+          priority
+          />
+        ) : (
+            <Image
+            src={project.defaultimg} 
+            className='bottom-0 shadow-2xl'
+            width={250}
+            height={250}
+            alt=''
+            priority
+            />
+        )}
+                
 
             </div>
         </CardHeader>
