@@ -12,13 +12,14 @@ import "swiper/css/pagination";
 
 import { Pagination, EffectCoverflow } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
+import Projects from "@/app/projects/page";
 
 const projectData = [
     {
         defaultimg: "/assets/projects/yerbnbss.png",
         hoverimg: '/assets/projects/reservation.gif',
         category: ["react js", "aws"],
-        name: "DevLau",
+        name: "Dlau.dev",
         description: "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
         link: "/",
         github: "https://github.com/dlaucodes/devlau",
@@ -82,27 +83,13 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {/* <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="flex w-full"
-      > */}
             {projectData.map((project, index) => {
               return (
+         
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
                 </SwiperSlide>
+       
               );
             })}
           </Swiper>
