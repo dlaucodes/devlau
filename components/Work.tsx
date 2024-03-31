@@ -14,6 +14,15 @@ import { Pagination, EffectCoverflow } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
+    {
+        defaultimg: "/assets/projects/yerbnbss.png",
+        hoverimg: '/assets/projects/reservation.gif',
+        category: ["react js", "aws"],
+        name: "DevLau",
+        description: "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
+        link: "/",
+        github: "/",
+      },
   {
     defaultimg: "/assets/projects/yerbnbss.png",
     hoverimg: '/assets/projects/reservation.gif',
@@ -47,7 +56,7 @@ const projectData = [
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
+    <section  id='projects-section' className="relative mb-12 mt-40 xl:mb-48  xl:top-16">
       <div className="container mx-auto">
         <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4 p">
@@ -59,9 +68,10 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[1000px] h-full xl:absolute top-0 right-0">
+        <div className="max-w-[1000px] h-full xl:absolute top-0 right-6">
           <Swiper
-            className="h-[500px]"
+            
+            className="h-[500px] "
             slidesPerView={1}
             breakpoints={{
               640: {

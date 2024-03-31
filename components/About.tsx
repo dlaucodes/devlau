@@ -81,7 +81,7 @@ const About = () => {
   return (
     <section id="about-section" className="xl:h-full xl:py-24">
       <div className="container mx-auto">
-        <div className="section-title mb-4 xl:mb-16 text-center mx-auto">
+        <div className="section-title mb-4 xl:mb-6 text-center mx-auto">
           About me
         </div>
       </div>

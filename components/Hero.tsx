@@ -13,7 +13,7 @@ import Social from "./Social";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 xl:h-[80vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between px-10">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
@@ -35,7 +35,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button variant="secondary" className="gap-x-2">
-                Download Resume <Download size={18} />
+               View Resume <Download size={18} />
               </Button>
             </div>
             <Social
@@ -52,8 +52,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 mt-40 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
+        <div className="hidden md:flex justify-center left-2/4 bottom-0 xl:bottom-0 absolute mt-40 animate-bounce">
+          <RiArrowDownSLine className="text-3xl text-primary mb-8" />
         </div>
       </div>
     </section>
