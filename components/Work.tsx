@@ -69,7 +69,7 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[1000px] h-full xl:absolute top-0 right-4">
+        <div className="max-w-[800px] h-full xl:absolute top-0 right-4">
           <Swiper
             
             className="h-[500px] "

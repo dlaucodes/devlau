@@ -14,7 +14,9 @@ import { RiGithubFill } from "react-icons/ri";
 
 const Projects = () => {
   return (
-     <div> hello</div>
+     <div> 
+      hello
+      </div>
   )
 }
 

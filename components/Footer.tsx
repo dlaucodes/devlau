@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between">
           <Social
             containerStyles="flex gap-x-6 mx-auto xl:mx:0 mb-4"
-            iconStyles="text-primary hover:text-primary"
+            iconsStyles="text-foreground hover:text-primary transition-all text-xl"
           />
           <div className="text-muted-foreground">
             Copyright &copy; David Lau. All rights reserved.

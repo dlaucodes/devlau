@@ -15,16 +15,16 @@ const MobileNav = () => {
         <CiMenuBurger value={{ size: "60px" }} className="cursor-pointer" />
       </SheetTrigger>
       <SheetContent>
-        <div className="flex flex-col items-center justify-between h-full py-8">
-          <div className="flex flex-col items-center gap-y-4">
+        <div className="flex flex-col items-center justify-between h-full py-12">
+          <div className="flex flex-col items-center gap-y-8">
             <Logo />
     
             <Nav
-              containerStyles="flex flex-col items-center gap-y-2 "
+              containerStyles="flex flex-col items-center gap-y-4 mt-8"
               linkStyles="text-xl"
             />
-            <Social containerStyles="flex gap-x-4" iconsStyles="text-foreground hover:text-primary transition-all"
-            linkStyles="text-2xl" />
+            <Social containerStyles="flex gap-x-6" iconsStyles="text-foreground hover:text-primary transition-all text-xl"
+          />
           </div>
         </div>
       </SheetContent>

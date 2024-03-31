@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import {
-  RiBriefcase4Fill,
+  RiFileTextFill,
   RiTeamFill,
   RiTodoFill,
   RiArrowDownSLine,
@@ -34,9 +34,12 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
+              <Link href='https://docs.google.com/document/d/1GEqPwXmpgmEqv5r1XLY7aHzzSK13YpJNmWita-3SRqk/view'
+              target='_blank'>
               <Button variant="secondary" className="gap-x-2">
-               View Resume <Download size={18} />
+               View Resume <RiFileTextFill size={18} />
               </Button>
+              </Link>
             </div>
             <Social
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"

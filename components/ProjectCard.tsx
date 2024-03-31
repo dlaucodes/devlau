@@ -48,10 +48,13 @@ const ProjectCard = ({ project }) => {
 
                     <RiGithubFill className="h-[30px] w-[30px] hover:text-primary" />
                 </Link>
-            </div>           
+
+            </div>
+            
+            
           </div>
       </CardHeader>
-      <div className="h-[150px] px-6 py-6">
+      <div className="min-h-[200px] px-6">
         <h4 className="h4 mb-1">{project.name}</h4>
         <p className="text-muted-foreground text-lg">{project.description}</p>
       </div>
