@@ -78,6 +78,7 @@ const config = {
       },
       backgroundImage: {
         hero: 'url(/assets/hero/hero-bg.png)',
+        hero_dark: 'url(/assets/hero/hero-dark.png)',
         hero_shape: 'url(/assets/hero/shape-1.svg)',
         hero_shape2_light: 'url(/assets/hero/shape-2-light.svg)',
         hero_shape2_dark: 'url(/assets/hero/shape-2-dark.svg)',

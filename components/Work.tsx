@@ -57,7 +57,7 @@ const projectData = [
 
 const Work = () => {
   return (
-    <section  id='projects-section' className="relative mb-12 mt-40 xl:mb-48  xl:top-16">
+    <section  id='projects-section' className="relative mb-12 mt-40 xl:mb-48  xl:top-[-40px]">
       <div className="container mx-auto">
         <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4 p">
@@ -69,7 +69,7 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[1000px] h-full xl:absolute top-0 right-6">
+        <div className="max-w-[1000px] h-full xl:absolute top-0 right-4">
           <Swiper
             
             className="h-[500px] "
