@@ -16,7 +16,7 @@ import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
     defaultimg: "/assets/projects/portlau.png",
-    hoverimg: "/assets/projects/portlau.png",
+    hoverimg: "/assets/projects/devlau.gif",
     category: ["react js", "aws"],
     name: "Dlau.dev",
     description:
