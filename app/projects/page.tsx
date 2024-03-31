@@ -1,23 +1,75 @@
-'use client'
-import Work from '@/components/Work'
-import ProjectCard from '@/components/ProjectCard'
+"use client";
+import React from "react";
+import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
-import Image from "next/image";
-import { Card, CardHeader } from "./ui/card";
-import { Link2 } from "lucide-react";
-import { Badge } from "./ui/badge";
-import { useState } from "react";
-import { RiGithubFill } from "react-icons/ri";
 
+const projectData = [
+  {
+    defaultimg: "/assets/projects/yerbnbss.png",
+    hoverimg: "/assets/projects/reservation.gif",
+    category: ["react js", "aws"],
+    name: "Dlau.dev",
+    description:
+      "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
+    link: "/",
+    github: "https://github.com/dlaucodes/devlau",
+  },
+  {
+    defaultimg: "/assets/projects/yerbnbss.png",
+    hoverimg: "/assets/projects/reservation.gif",
+    category: ["react js", "aws"],
+    name: "Yerbnb",
+    description: "A full authentication near pixel-perfect clone of Airbnb.",
+    link: "https://yerbnb.herokuapp.com/",
+    github: "https://github.com/dlaucodes/YerBnb-FS-Project",
+  },
+  {
+    defaultimg: "/assets/projects/auroraSS.png",
+    hoverimg: "/assets/projects/aurora-demo.gif",
+    category: "react js",
+    name: "Aurora",
+    description:
+      "An animated visual representation generated in real time off beats analyzed from music.",
+    link: "https://dlaucodes.github.io/JSProject/",
+    github: "https://github.com/dlaucodes/JSProject",
+  },
+  {
+    defaultimg: "/assets/projects/opus.png",
+    hoverimg: "/assets/projects/opus.png",
+    category: "react js",
+    name: "Opus",
+    description:
+      "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
+    link: "https://opus.onrender.com",
+    github: "https://github.com/Onigirisen/Opus",
+  },
+];
 
-
+console.log(projectData);
 
 const Projects = () => {
   return (
-     <div> 
-      hello
-      </div>
-  )
-}
+    <section className="min-h-screen w-full pt-12 flex flex-col relative">
+      <div className='container mx-auto'>
+        <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
+          My Projects
+        </h2>
+        <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 flex items-center gap-8">
+          {projectData.map((project, index) => {
+              return (
+         
+  
+                  <ProjectCard project={project} />
 
-export default Projects
+       
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

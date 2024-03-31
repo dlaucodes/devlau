@@ -131,11 +131,11 @@ const About = () => {
                 {experienceData.map((item, index) => {
                   return (
                     <div
-                      className="flex text-center flex-col xl:mx:0 "
+                      className="flex text-center flex-col xl:mx:0  md:w-full items-center"
                       key={index}
                     >
                       <div className="mx-2 justify-center flex xl:text-left xl:justify-start">
-                        <ul className="min-w-[500px] xl:w-full p-8">
+                        <ul className=" xl:w-full p-8">
                           <li className="h4 text-primary">
                             {item.data1.company}
                           </li>
@@ -153,7 +153,7 @@ const About = () => {
                         </ul>
                       </div>
                       <div className="mx-2 justify-center flex xl:text-left xl:justify-start">
-                        <ul className="min-w-[500px] xl:w-full p-8">
+                        <ul className=" xl:w-full p-8">
                           <li className="h4 text-primary">
                             {item.data2.company}
                           </li>
@@ -171,7 +171,7 @@ const About = () => {
                         </ul>
                       </div>
                       <div className="mx-2 justify-center flex xl:text-left xl:justify-start">
-                        <ul className="min-w-[500px] xl:w-full p-8">
+                        <ul className=" xl:w-full p-8">
                           <li className="h4 text-primary">
                             {item.data3.company}
                           </li>

@@ -12,21 +12,21 @@ import "swiper/css/pagination";
 
 import { Pagination, EffectCoverflow } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
-import Projects from "@/app/projects/page";
 
 const projectData = [
-    {
-        defaultimg: "/assets/projects/yerbnbss.png",
-        hoverimg: '/assets/projects/reservation.gif',
-        category: ["react js", "aws"],
-        name: "Dlau.dev",
-        description: "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
-        link: "/",
-        github: "https://github.com/dlaucodes/devlau",
-      },
   {
     defaultimg: "/assets/projects/yerbnbss.png",
-    hoverimg: '/assets/projects/reservation.gif',
+    hoverimg: "/assets/projects/reservation.gif",
+    category: ["react js", "aws"],
+    name: "Dlau.dev",
+    description:
+      "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
+    link: "/",
+    github: "https://github.com/dlaucodes/devlau",
+  },
+  {
+    defaultimg: "/assets/projects/yerbnbss.png",
+    hoverimg: "/assets/projects/reservation.gif",
     category: ["react js", "aws"],
     name: "Yerbnb",
     description: "A full authentication near pixel-perfect clone of Airbnb.",
@@ -45,7 +45,7 @@ const projectData = [
   },
   {
     defaultimg: "/assets/projects/opus.png",
-    hoverimg: '/assets/projects/opus.png',
+    hoverimg: "/assets/projects/opus.png",
     category: "react js",
     name: "Opus",
     description:
@@ -57,10 +57,13 @@ const projectData = [
 
 const Work = () => {
   return (
-    <section  id='projects-section' className="relative mb-12 mt-40 xl:mb-48  xl:top-[-40px]">
-      <div className="container mx-auto">
-        <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4 p">
+    <section
+      id="projects-section"
+      className="relative mb-12 mt-40 xl:mb-48  xl:top-[-40px]"
+    >
+      <div className="container mx-auto xl:flex xl:flex-row">
+        <div className="flex max-w-[300px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex-col justify-center items-center xl:items-start">
+          <h2 className="section-title mb-4 py-8">
             Latest Projects
             <RiArrowRightSLine className="hidden xl:flex text-4xl text-primary font-bold" />
           </h2>
@@ -69,10 +72,9 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        <div className="max-w-[800px] h-full xl:absolute top-0 right-4">
+        <div className="max-w-[1000px] items-center h-full  top-0 right-0">
           <Swiper
-            
-            className="h-[500px] "
+            className="h-[500px] max-w-[800px]"
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -83,13 +85,11 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {projectData.map((project, index) => {
+            {projectData.slice(0, 3).map((project, index) => {
               return (
-         
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
                 </SwiperSlide>
-       
               );
             })}
           </Swiper>
