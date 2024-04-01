@@ -6,7 +6,7 @@ const Technologies = () => {
       "/assets/icons/nextjs-icon.png",
       "/assets/icons/javascript.png",
       "/assets/icons/python.png",
-      "/assets/icons/fastAPI.png",
+      "/assets/icons/fastapi1.png",
       "/assets/icons/react.png",
       "/assets/icons/redux.png",
       "/assets/icons/html5.png",
@@ -22,7 +22,7 @@ const Technologies = () => {
       "/assets/icons/sass.png",
       "/assets/icons/bootstrap.png",
       "/assets/icons/aws.png",
-      "/assets/icons/figma.png",
+      "/assets/icons/figma1.png",
     ];
   
     return (
