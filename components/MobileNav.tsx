@@ -1,14 +1,20 @@
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "/components/ui/sheet";
-
+import React from "react";
 import { CiMenuBurger } from "react-icons/ci";
 
 import Nav from "./Nav";
 import Logo from "./Logo";
 import Social from "./Social";
 import About from "./About";
+//add interface
+interface MobileNavProps {
+  containerStyles: string;
+  linkStyles: string;
+  underlineStyles: string;
+}
 
-const MobileNav = () => {
+const MobileNav: React.FC<MobileNavProps> = ({ containerStyles, linkStyles, underlineStyles }) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
