@@ -11,12 +11,23 @@ const Header = () => {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
 
+  // useEffect(() => {
+  //   const scrollYPos = window.addEventListener("scroll", () => {
+  //     window.scrollY > 50 ? setHeader(true) : setHeader(false);
+  //   });
+  //   return () => window.removeEventListener("scroll", scrollYPos);
+  // }, );
   useEffect(() => {
-    const scrollYPos = window.addEventListener("scroll", () => {
+    const scrollHandler = () => {
       window.scrollY > 50 ? setHeader(true) : setHeader(false);
-    });
-    return () => window.removeEventListener("scroll", scrollYPos);
-  });
+    };
+  
+    window.addEventListener("scroll", scrollHandler);
+  
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <header
