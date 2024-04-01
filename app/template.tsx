@@ -27,7 +27,7 @@
 // }
 
 // export default Template;
-
+'use client'
 import React from 'react'; // Import React from 'react'
 import { motion } from 'framer-motion';
 import useScrollProgress from "@/hooks/useScrollProgress";
