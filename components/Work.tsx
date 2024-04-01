@@ -55,7 +55,7 @@ const projectData = [
       "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
     link: "https://opus.onrender.com",
     github: "https://github.com/Onigirisen/Opus",
-    technologies: ['react', 'redux', 'javascript', 'mangodb',  ],
+    technologies: ['react', 'redux', 'javascript', 'mangodb', 'express', 'nodejs'],
   },
 ];
 

@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
       </CardHeader>
       <div className="min-h-[200px] px-6">
         <h4 className="h4 mb-1">{project.name}</h4>
-        <div className='flex flex-row flex-wrap gap-2 mb-2'>
+        <div className='flex flex-row flex-wrap gap-2 mb-4'>
         {project.technologies.map((tech, index) => {
               return (
                 <div key={index}>
