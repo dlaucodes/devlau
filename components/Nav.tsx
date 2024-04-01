@@ -1,7 +1,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
 import { motion } from 'framer-motion'
 
 const links = [
@@ -10,8 +9,13 @@ const links = [
     { path: '/projects', name: 'projects' },
     { path: '/#contact-section', name: 'contact' },
 ]
+interface NavProps {
+    containerStyles: string;
+    linkStyles: string;
+    underlineStyles: string;
+  }
 
-const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
+const Nav: React.FC<NavProps> = ({ containerStyles, linkStyles, underlineStyles }) => {
     const path = usePathname();
 
     return (
