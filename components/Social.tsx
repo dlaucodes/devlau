@@ -19,7 +19,13 @@ const icons = [
 },
 ];
 
-const Social = ({containerStyles, iconsStyles}) => {
+interface SocialProps {
+    containerStyles: string;
+    iconsStyles: string;
+    
+  }
+
+const Social: React.FC<SocialProps> = ({containerStyles, iconsStyles}) => {
   return (
     <div className={`${containerStyles}`}>
         {icons.map((icon, index)=>{

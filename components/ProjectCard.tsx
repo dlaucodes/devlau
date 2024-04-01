@@ -13,7 +13,7 @@ interface Project {
     hoverimg: string;
     defaultimg: string;
     github: string;
-    technologies: string;
+    technologies: string[];
 }
 
 interface ProjectCardProps {
