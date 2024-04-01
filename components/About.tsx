@@ -72,7 +72,7 @@ const experienceData = [
 
 
 const About = () => {
-  const getData = (arr, title) => {
+  const getData = (arr: { title: string }[], title: string) => {
     return arr.find((item) => item.title === title);
   };
   return (
