@@ -6,7 +6,21 @@ import { Badge } from "./ui/badge";
 import { useState } from "react";
 import { RiGithubFill } from "react-icons/ri";
 
-const ProjectCard = ({ project }) => {
+interface Project {
+    name: string;
+    description: string;
+    link: string;
+    hoverimg: string;
+    defaultimg: string;
+    github: string;
+    technologies: string;
+}
+
+interface ProjectCardProps {
+    project: Project;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
