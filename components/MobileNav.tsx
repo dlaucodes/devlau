@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet";
 import React from "react";
-import { CiMenuBurger } from "react-icons/ci";
+import { AlignJustify } from "lucide-react";
 
 import Nav from "./Nav";
 import Logo from "./Logo";
@@ -18,7 +18,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ containerStyles, linkStyles, unde
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <CiMenuBurger value={{ size: "60px" }} className="cursor-pointer" />
+        <AlignJustify className="cursor-pointer" />
       </SheetTrigger>
       <SheetContent>
         <div className="flex flex-col items-center justify-between h-full py-12">
