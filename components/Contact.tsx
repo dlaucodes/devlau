@@ -35,10 +35,10 @@ const Contact = () => {
         <div className="px-12 py-8 rounded-xl bg-tertiary dark:bg-secondary/40">
           {infoData.map((item, index) => {
             return (
-              <Link href={item.path} target="_blank">
+                <Link key={index} href={item.path} target="_blank">
+                  
                 <div
                   className="flex items-center gap-x-4 mx-4 xl:mx-0 my-2 border rounded-xl border-primary p-3 hover:bg-secondary"
-                  key={index}
                 >
                   <div className="text-primary">{item.icon}</div>
                   <div className="">{item.text}</div>
