@@ -26,6 +26,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ containerStyles, linkStyles, unde
             <Logo />
     
             <Nav
+              underlineStyles=''
               containerStyles="flex flex-col items-center gap-y-4 mt-8"
               linkStyles="text-xl"
             />
