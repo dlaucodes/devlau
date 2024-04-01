@@ -56,6 +56,15 @@ const ProjectCard = ({ project }) => {
       </CardHeader>
       <div className="min-h-[200px] px-6">
         <h4 className="h4 mb-1">{project.name}</h4>
+        <div>
+        {project.technologies.map((tech, index) => {
+              return (
+                <div key={index}>
+                    {tech}
+                </div>
+              );
+            })} 
+        </div>
         <p className="text-muted-foreground text-lg">{project.description}</p>
       </div>
     </Card>

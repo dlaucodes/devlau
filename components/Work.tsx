@@ -23,6 +23,7 @@ const projectData = [
       "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
     link: "https://dlau.dev",
     github: "https://github.com/dlaucodes/devlau",
+    technologies: ['react', 'redux', 'whatever' ],
   },
   {
     defaultimg: "/assets/projects/yerbnbss.png",
@@ -32,6 +33,7 @@ const projectData = [
     description: "A full authentication near pixel-perfect clone of Airbnb.",
     link: "https://yerbnb.herokuapp.com/",
     github: "https://github.com/dlaucodes/YerBnb-FS-Project",
+    technologies: ['react', 'redux', 'aws' ],
   },
   {
     defaultimg: "/assets/projects/auroraSS.png",
@@ -42,6 +44,7 @@ const projectData = [
       "An animated visual representation generated in real time off beats analyzed from music.",
     link: "https://dlaucodes.github.io/JSProject/",
     github: "https://github.com/dlaucodes/JSProject",
+    technologies: ['react', 'redux', 'whatever' ],
   },
   {
     defaultimg: "/assets/projects/opus.png",
@@ -52,6 +55,7 @@ const projectData = [
       "Opus is a user friendly app built with a MERN stack.  Full authentication and Book/Journal creation app.",
     link: "https://opus.onrender.com",
     github: "https://github.com/Onigirisen/Opus",
+    technologies: ['react', 'redux', 'whatever' ],
   },
 ];
 
