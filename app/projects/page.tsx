@@ -63,8 +63,10 @@ const Projects = () => {
           {projectData.map((project, index) => {
               return (
          
-  
-                  <ProjectCard project={project} />
+                  <div key={index}>
+
+                    <ProjectCard project={project} />
+                  </div>
 
        
               );

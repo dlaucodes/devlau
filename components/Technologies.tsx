@@ -29,7 +29,7 @@ const Technologies = () => {
       <div className="grid grid-cols-4 w-full justify-items-center gap-8 mt-10">
         {icons.map((icon, index) => (
           <div key={index}>
-            <Image src={icon} width={65} height={65} priority alt="" />
+            <Image src={icon} width={65} height={65} priority alt="icons" />
           </div>
         ))}
       </div>
