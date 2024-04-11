@@ -49,7 +49,7 @@ const projectData = [
   },
 ];
 
-console.log(projectData);
+
 
 const Projects = () => {
   return (

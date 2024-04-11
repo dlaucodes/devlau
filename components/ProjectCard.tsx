@@ -32,7 +32,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-        <Link href={project.link}>
+        <Link href={project.link}
+            target='_blank'>
             {isHovering ? (
               <Image
                 src={project.hoverimg}
