@@ -30,7 +30,7 @@ const projectData = [
     category: "react js",
     name: "Next Weather",
     description:
-      "User-friendly weather app. User's are able to view weather conditions based on city input, toggle between Fahrenheit and Celsius Measurements, and view 5 day upcoming forecast.",
+      "User-friendly weather app. City weather input, Fahrenheit Celsius toggle, and view 5 day upcoming forecast.",
     link: "https://nextweather-mu.vercel.app/",
     github: "https://github.com/dlaucodes/nextweather",
     technologies: ['nextjs', 'javascript', 'tailwindcss', 'shadcn/ui', 'express', 'openweatherapi' ],
@@ -89,7 +89,7 @@ const Work = () => {
         </div>
         <div className="max-w-[800px] items-center h-full top-0 right-0">
           <Swiper
-            className="h-[500px] max-w-[800px]"
+            className="h-[550px] max-w-[800px]"
             slidesPerView={1}
             breakpoints={{
               640: {

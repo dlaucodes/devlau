@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
   return (
-    <Card>
+    <Card className='h-[500px]'>
       <CardHeader>
           <div
             className="relative w-full h-[200px] flex items-center justify-center flex-row bg-tertiary dark:bg-secondary/40"
