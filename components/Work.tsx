@@ -30,7 +30,7 @@ const projectData = [
     category: "react js",
     name: "Next Weather",
     description:
-      "User-friendly weather app. City weather input, Fahrenheit Celsius toggle, and view 5 day upcoming forecast.",
+      "User-friendly weather app. City weather input, Fahrenheit Celsius toggle, & 5 day weather forecast.",
     link: "https://nextweather-mu.vercel.app/",
     github: "https://github.com/dlaucodes/nextweather",
     technologies: ['nextjs', 'javascript', 'tailwindcss', 'shadcn/ui', 'express', 'openweatherapi' ],
