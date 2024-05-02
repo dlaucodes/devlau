@@ -15,17 +15,6 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    defaultimg: "/assets/projects/portlau.png",
-    hoverimg: "/assets/projects/devlau.gif",
-    category: ["react js", "aws"],
-    name: "Dlau.dev",
-    description:
-      "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
-    link: "https://dlau.dev",
-    github: "https://github.com/dlaucodes/devlau",
-    technologies: ['nextjs', 'tailwindcss', 'javascript', 'html5', 'shadcn/ui', ],
-  },
-  {
     defaultimg: "/assets/projects/yerbnbss.png",
     hoverimg: "/assets/projects/reservation.gif",
     category: ["react js", "aws"],
@@ -34,6 +23,17 @@ const projectData = [
     link: "https://yerbnb.herokuapp.com/",
     github: "https://github.com/dlaucodes/YerBnb-FS-Project",
     technologies: ['react', 'redux', 'javascript', 'html5', 'google maps', 'ruby on rails', 'aws', 'postgresql' ],
+  },
+  {
+    defaultimg: "/assets/projects/weatherss.png",
+    hoverimg: "/assets/projects/temptoggle.gif",
+    category: "react js",
+    name: "Next Weather",
+    description:
+      "User-friendly weather app. User's are able to view weather conditions based on city input, toggle between Fahrenheit and Celsius Measurements, and view 5 day upcoming forecast.",
+    link: "https://nextweather-mu.vercel.app/",
+    github: "https://github.com/dlaucodes/nextweather",
+    technologies: ['nextjs', 'javascript', 'tailwindcss', 'shadcn/ui', 'express', 'openweatherapi' ],
   },
   {
     defaultimg: "/assets/projects/auroraSS.png",
@@ -45,6 +45,17 @@ const projectData = [
     link: "https://dlaucodes.github.io/JSProject/",
     github: "https://github.com/dlaucodes/JSProject",
     technologies: ['javascript', 'html5', 'css', 'web audio api' ],
+  },
+  {
+    defaultimg: "/assets/projects/portlau.png",
+    hoverimg: "/assets/projects/devlau.gif",
+    category: ["nextjs"],
+    name: "Dlau.dev",
+    description:
+      "This very portfolio was built from the ground up with NextJS & Tailwindcss.",
+    link: "https://dlau.dev",
+    github: "https://github.com/dlaucodes/devlau",
+    technologies: ['nextjs', 'tailwindcss', 'javascript', 'html5', 'shadcn/ui', ],
   },
   {
     defaultimg: "/assets/projects/opus.png",
@@ -89,7 +100,7 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {projectData.slice(0, 3).map((project, index) => {
+            {projectData.slice(0, 4).map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />

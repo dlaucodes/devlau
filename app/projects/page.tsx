@@ -5,6 +5,17 @@ import Link from "next/link";
 
 const projectData = [
   {
+    defaultimg: "/assets/projects/weatherss.png",
+    hoverimg: "/assets/projects/temptoggle.gif",
+    category: "react js",
+    name: "Next Weather",
+    description:
+      "Next Weather App is a User-friendly weather app. User's are able to view weather conditions based on city input, toggle between Fahrenheit and Celsius Measurements, and view 5 day upcoming forecast. Application is built with NextJS and Express backend, API endpoints for weather data from Open Weather Map API. Mobile responsive.",
+    link: "https://nextweather-mu.vercel.app/",
+    github: "https://github.com/dlaucodes/nextweather",
+    technologies: ['nextjs', 'javascript', 'tailwindcss', 'shadcn/ui' ],
+  },
+  {
     defaultimg: "/assets/projects/portlau.png",
     hoverimg: "/assets/projects/devlau.gif",
     category: ["react js", "aws"],
